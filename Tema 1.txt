@@ -1,0 +1,66 @@
+ Ex1:
+
+    //Faceti un program care sa aiba 5 variabile de tip intreg(integer) 3 dintre ele sa fie pozitive si 2 negative
+
+    //Si alte 5 variabile sa fie numere peste 1000
+
+    //1. Sa se calculeze si afiseze suma primelor 5 numere
+
+    //2. Sa se calculeze si afiseze produsul dintre suma primelor 5 numere si diferenta dintre urmatoarele 5 numere
+
+    //3. Sa se calculeze si afiseze media aritmetica a tuturor numerelor.
+
+    //4. Sa se calculeze si afiseze media aritmetica a numerelor negative
+
+    int numar1= 759;
+    int numar2= 593;
+    int numar3= 825;
+    int numar4= -637;
+    int numar5= -261;
+    int numar6= 1563;
+    int numar7= 1439;
+    int numar8= 1155;
+    int numar9= 1669;
+    int numar10= 1723;
+
+Raspunsul la punctul 1: int suma= numar1+numar2+numar3+numar4+numar5;
+    System.out.println(suma);
+    }
+}
+
+"C:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\lib\idea_rt.jar=50638:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Roxana\IdeaProjects\LEB1\out\production\LEB1 Main
+1279
+
+Process finished with exit code 0
+
+Raspunsul la punctul 2: int produs = (numar1+numar2+numar3+numar4+numar5) * (numar6-numar7-numar8-numar9-numar10);
+
+    System.out.println(produs);
+    }
+}
+
+"C:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\lib\idea_rt.jar=50686:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Roxana\IdeaProjects\LEB1\out\production\LEB1 Main
+-5680039
+
+Process finished with exit code 0
+
+Raspunsul la punctul 3: int mediearitmetica=(numar1+numar2+numar3+numar4+numar5+numar6+numar7+numar8+numar9+numar10)/10;
+            System.out.println(mediearitmetica);
+    }
+}
+
+"C:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\lib\idea_rt.jar=50697:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Roxana\IdeaProjects\LEB1\out\production\LEB1 Main
+905
+
+Process finished with exit code 0
+
+Raspunsul la punctul 4: int mediearitmeticanumerenegative=(numar4+numar5)/2;
+    System.out.println(mediearitmeticanumerenegative);
+
+    }
+}
+
+"C:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\lib\idea_rt.jar=50740:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Roxana\IdeaProjects\LEB1\out\production\LEB1 Main
+-449
+
+Process finished with exit code 0

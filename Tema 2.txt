@@ -1,0 +1,108 @@
+Exercitiul 1:Scrieti un program care afiseaza de 6 ori propozitia Ana are 24 de ani. Fratele ei, David, e cu 6 ani mai mic.Scrieti un program care afiseaza varsta lui David.
+public class TEMA2 {
+    public static void main(String[] args) {
+//Scrieti un program care afiseaza de 6 ori propozitia Ana are 24 de ani. Fratele ei, David, e cu 6 ani mai mic.
+// Scrieti un program care afiseaza varsta lui David.
+
+        //Afisam propozitia "Ana are 24 de ani. Fratele ei, David e cu 6 ani mai mic" de 6 ori.
+        for (int i=0; i<6; i++) {
+            System.out.println("Ana are 24 de ani. Fratele ei, David e cu 6 ani mai mic");
+        }
+        //Calculam varsta lui David
+        int varstaAna=30;
+        int diferentavarsta=6;
+        int varstaDavid= varstaAna-diferentavarsta;
+        System.out.println("Varsta lui David este:"+varstaDavid+"de ani");
+    }
+}
+
+
+Ana are 24 de ani. Fratele ei, David e cu 6 ani mai mic
+Ana are 24 de ani. Fratele ei, David e cu 6 ani mai mic
+Ana are 24 de ani. Fratele ei, David e cu 6 ani mai mic
+Ana are 24 de ani. Fratele ei, David e cu 6 ani mai mic
+Ana are 24 de ani. Fratele ei, David e cu 6 ani mai mic
+Varsta lui David este:24de ani
+
+Process finished with exit code 0
+
+Exercitiul 2: Scrieti un program care contine 4 metode, 2 de tip void, una sa fie de tip String si alta de tip int. Cele void sa contina variabile locale de tipul: int/double/float, variabile care vor fi initializate cu valorile primite ca si parametru de catre functie si sa le afiseze.
+Metoda string sa primeasca 5 parametrii de tip string si sa returneze un singur string compus din cei 5 parametrii. Metoda int de primeasca 3 parametrii de tipul int/double/float si verifice care numar este par si care este impar si sa returneze suma dintre 1 numar par si unul impar
+
+public class TEMA2 {
+    // Metodă void cu parametrii de tip int, double și float
+    public static void afisareVariabile(int x, double y, float z) {
+        System.out.println("Variabilele primite sunt: ");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+    }
+
+    // Metodă void cu parametrii de tip int, double și float
+    public static void afisareVariabileLoc(int x, double y, float z) {
+        int a = x + 10;
+        double b = y * 2;
+        float c = z / 3;
+        System.out.println("Variabilele locale sunt: ");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+    }
+
+    // Metodă String care primește 5 parametrii de tip String și returnează un string compus
+    public static String compuneString(String s1, String s2, String s3, String s4, String s5) {
+        return s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5;
+    }
+
+    // Metodă int care primește 3 parametrii de tip int, double și float și returnează suma dintre un număr par și unul impar
+    public static int sumaParImpar(int a, double b, float c) {
+        int numarPar = 0;
+        int numarImpar = 0;
+
+        // Determinăm dacă a este par sau impar
+        if (a % 2 == 0) {
+            numarPar = a;
+        } else {
+            numarImpar = a;
+        }
+
+        // Determinăm dacă b este par sau impar
+        if ((int) b % 2 == 0) {
+            numarPar += (int) b;
+        } else {
+            numarImpar += (int) b;
+        }
+
+        // Determinăm dacă c este par sau impar
+        if ((int) c % 2 == 0) {
+            numarPar += (int) c;
+        } else {
+            numarImpar += (int) c;
+        }
+
+        // Returnăm suma dintre un număr par și unul impar
+        return numarPar + numarImpar;
+    }
+
+    // Metoda main pentru a testa funcționalitatea metodelor
+    public static void main(String[] args) {
+        // Testăm metodele
+        afisareVariabile(7, 1.5, 2.7f);
+        afisareVariabileLoc(12, 6.5, 6.8f);
+        System.out.println(compuneString("Hello", "lume", "de la ", "Java", "programming!"));
+        System.out.println("Suma dintre un număr par și unul impar este: " + sumaParImpar(5, 6.5, 7.8f));
+    }
+}
+
+
+
+"C:\Program Files\Java\jdk-22\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\lib\idea_rt.jar=52922:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Roxana\IdeaProjects\LEB1\out\production\LEB1 TEMA2
+Variabilele primite sunt: 
+x = 7
+y = 1.5
+z = 2.7
+Variabilele locale sunt: 
+a = 22
+b = 13.0
+c = 2.2666667
+Hello lume de la  Java programming!

@@ -1,0 +1,78 @@
+1. How to swap two values using 3rd variable: a and b will be read from keyboard.
+t java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     // how to swap two values using 3rd variable: a and b will be read from keyboard
+      Scanner scan= new Scanner(System.in);
+      System.out.println("Introdu valoarea pentru a:");
+      int a= scan.nextInt();
+      System.out.println("Introdu valoarea pentru b:");
+      int b= scan.nextInt();
+      int c;
+      c=a;
+      a=b;
+      b=c;
+      System.out.println("a devine: "+a);
+      System.out.println("b devine: "+b);
+      scan.close();
+2. How to check Odd and Even number: a nad b will be read from heyboard.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     //How to check Odd and Even number: a nad b will be read from heyboard.
+      Scanner scan= new Scanner(System.in);
+      //Citirea valorilor de la tastatura
+      System.out.println("Introdu valoarea lui a: ");
+       int a= scan.nextInt();
+       System.out.println("Introdu valoarea lui b: ");
+       int b= scan.nextInt();
+       if (a%2==0) {
+      System.out.println(a + "este numar par");
+       }else {
+       System.out.println(a + "este nuamr impar");
+       }
+        if (b%2==0) {
+         System.out.println(b + "este numar par");
+       } else {
+        System.out.println(b + "este numar impar");
+      } else {
+        scan.close();
+3. A numer is given by keyboard, calculate factorial ->n!=n x(n-1)x(n-2)x(n-3)..(n-1).
+   import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     //A numer is given by keyboard, calculate factorial ->n!=n x(n-1)x(n-2)x(n-3)..(n-1).
+     Scanner scan= new Scanner(System.in);
+     System.out.println("Introdu un numar: ");
+     int n= scan.nextInt();
+     int factorial= calculatefactorial(n);
+     System.out.println("Factorialul lui "+n+" este: "+factorial);
+     scan.close();
+   }
+}
+4. Check if two strings are equals and compare them. Use scanner to takes the string values.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     //Check if two strings are equals and compare them. Use scanner to takes the string values.
+      Scanner scan= new Scanner(System.in);
+      
+    //Primul sir
+   System.out.println("Introduceti primul sir: ");
+    String firststring = scan.nextLine();
+    //Al doilea sir
+    System.out.println("Introduceti al doilea sir: ");
+      String secondtstring = scan.nextLine();
+     //Verificarea egalitatii dintre siruri
+      if (firststring.equals(secondtstring)) {
+      System.out.println("Cele doua siruri sunt egale");
+     } else {
+       System.out.println("Cele doua siruri nu sunt egale");
+      scan.close();
+   }
+  }
+}

@@ -1,0 +1,117 @@
+1. t java.util.*;
+
+import static java.lang.System.*;
+public class Main {
+    public static void main(String[] args) {
+       // 1. Citit un caracter si 2 numere de la tastatura, 
+        // si stocati-le in variabile. Folosind structura switch, daca s-a introdus un caracter anume, 
+        // realizati operatia respectiva cu cele 2 numere, si afisati rezultatul pe ecran:-‘a’: adaugare-‘s’: scadere-‘i’: inmultire-‘p’: impartire-‘m’: modul.
+        // Daca nu s-a introdus un caracter valid, afisati un mesaj de eroare.
+       
+        Scanner scan = new Scanner(in);
+        out.println("Introduceti un caracter 'a', 's', 'i', 'p', 'm'");
+        char operatie = scan.next().charAt(0);
+        out.println("Introduceti primul numar: ");
+        double numarul1 = scan.nextDouble();
+        out.println("Introduceti al doilea numar: ");
+        double numarul2 = scan.nextDouble();
+        //Declaratiile variabilei pentru stocarea rezultatului
+        double rezultat = 0;
+        //Realizarea operatiei in functie de caracterul introdus
+
+        switch (operatie) {
+            case 'a':
+                rezultat = numarul1 + numarul2;
+                break;
+            case 's':
+                rezultat = numarul1 - numarul2;
+                break;
+            case 'i':
+                rezultat = numarul1 * numarul2;
+                break;
+            case 'p':
+                if (numarul2 != 0) {
+                    rezultat = numarul1 / numarul2;
+                } else {
+                    out.println("Eroare: nu se poate imparti la 0.");
+                    return;
+                }
+                break;
+            case 'm':
+                rezultat = numarul1 % numarul2;
+                break;
+            default:
+                out.println("Caracter invalid!");
+                out.println("Rezultatul este: " + rezultat);
+        }
+
+    }
+}
+
+2. //Definiti un array de 2 dimensiuni, fiecare dimensiune sa aiba cate 3, respectiv 5 elemente. 
+//Initializati array-ul. Afisati primele si ultimele elemente din fiecare dimensiune pe ecran.
+
+import java.util.*;
+
+import static java.lang.System.*;
+public class Main {
+    public static void main(String[] args) {
+       //2. Definiti un array de 2 dimensiuni, fiecare dimensiune sa aiba cate 3, respectiv 5 elemente.
+        // Initializati array-ul.
+        // Afisati primele si ultimele elemente din fiecare dimensiune pe ecran
+        int[][] arraybidimensional= {
+                {79, 80, 81},
+                {82, 83, 84, 85}
+        };
+        System.out.println("Primele elemeente din fiecare dimensiune: ");
+        System.out.println("Prima dimensiune ");
+        System.out.println("Elementul 1: "+ arraybidimensional[0][0]);
+        System.out.println("Elementul 2: "+arraybidimensional[1][0]);
+        System.out.println("\n Ultimeele elemente din fiecare dimnesiune: ");
+        System.out.println("Prima dimensiune: ");
+        System.out.println("Elementul 3: "+ arraybidimensional[0][arraybidimensional[0].length-1]);
+        System.out.println("A doua dimensiune: ");
+        System.out.println("Elementul 4: "+ arraybidimensional[1][arraybidimensional[1].length-1]);
+
+
+        }
+
+    }
+
+
+   //3. Definiti un array de char-uri. Iterati array-ul folosind structura for, si afisati pe ecran cate al doilea caracter din sir.
+
+import java.util.*;
+
+import static java.lang.System.*;
+public class Main {
+    public static void main(String[] args) {
+       //3. Definiti un array de char-uri. Iterati array-ul folosind structura for, si afisati pe ecran cate al doilea caracter din sir.
+char [] caractere= {'t', 'u', 'v', 'x', 'y', 'z'};
+System.out.println("Al doilea caracter din sir: ");
+for (int i=0; i<caractere.length; i++) {
+    if (i+1< caractere.length) {
+        System.out.println("Elementul " + i + ":"+ caractere[i + 1]);
+    }else {
+        System.out.println("Elementul "+i+": Nu exista al doilea element");
+
+    }
+}
+
+
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
